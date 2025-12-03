@@ -1,8 +1,8 @@
 package com.therivex1907.StructYourLife.services;
 
 import com.therivex1907.StructYourLife.models.OrderItem;
-import com.therivex1907.StructYourLife.reponses.BaseResponse;
-import com.therivex1907.StructYourLife.reponses.OrderItemResponse;
+import com.therivex1907.StructYourLife.responses.BaseResponse;
+import com.therivex1907.StructYourLife.responses.OrderItemResponse;
 import com.therivex1907.StructYourLife.repositories.OrderItemRepository;
 import com.therivex1907.StructYourLife.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;

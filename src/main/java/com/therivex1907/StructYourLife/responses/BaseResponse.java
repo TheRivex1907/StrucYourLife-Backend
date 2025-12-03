@@ -1,4 +1,4 @@
-package com.therivex1907.StructYourLife.reponses;
+package com.therivex1907.StructYourLife.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,7 @@
 package com.therivex1907.StructYourLife.services;
 
 import com.therivex1907.StructYourLife.models.Category;
-import com.therivex1907.StructYourLife.reponses.BaseResponse;
+import com.therivex1907.StructYourLife.responses.BaseResponse;
 import com.therivex1907.StructYourLife.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,7 @@
 package com.therivex1907.StructYourLife.services;
 
-import com.therivex1907.StructYourLife.models.Product;
-import com.therivex1907.StructYourLife.reponses.BaseResponse;
-import com.therivex1907.StructYourLife.reponses.ProductResponse;
+import com.therivex1907.StructYourLife.responses.BaseResponse;
+import com.therivex1907.StructYourLife.responses.ProductResponse;
 import com.therivex1907.StructYourLife.repositories.NativeQueryRepository;
 import com.therivex1907.StructYourLife.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;

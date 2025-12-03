@@ -1,6 +1,5 @@
-package com.therivex1907.StructYourLife.reponses;
+package com.therivex1907.StructYourLife.responses;
 
-import com.therivex1907.StructYourLife.models.OrderItem;
 import lombok.Data;
 
 import java.time.LocalDateTime;
