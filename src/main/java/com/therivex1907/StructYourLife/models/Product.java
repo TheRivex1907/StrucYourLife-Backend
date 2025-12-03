@@ -10,6 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
+import javax.validation.constraints.PositiveOrZero;
 import java.time.LocalDateTime;
 
 @NoArgsConstructor
@@ -26,7 +27,7 @@ public class Product {
     @Column(length = 100)
     private String name;
     @NotNull
-    @Positive
+    @PositiveOrZero
     private Integer stock;
     @NotNull
     @Positive
@@ -39,4 +40,8 @@ public class Product {
     private LocalDateTime updatedDate;
     @Column(name = "isactive")
     private Boolean isActive;
+    @Column(name = "userId")
+    private Integer userId;
+    @Column(name = "categoryid")
+    private Integer categoryId;
 }
