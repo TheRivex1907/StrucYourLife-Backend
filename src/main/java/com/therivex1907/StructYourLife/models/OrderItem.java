@@ -15,9 +15,11 @@ public class OrderItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "orderitemid")
     private Integer orderItemId;
-    @ManyToOne
-    @JoinColumn(name = "order_id", referencedColumnName = "orderid")
-    private Order order;
+//    @ManyToOne
+//    @JoinColumn(name = "order_id", referencedColumnName = "orderid")
+//    private Order order;
+    @Column(name = "orderId")
+    private Integer orderId;
     @Column(name = "productid")
     private Integer productId;
     private Integer quantity;

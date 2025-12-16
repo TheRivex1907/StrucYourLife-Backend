@@ -16,6 +16,7 @@ import java.util.List;
 @Table(name = "order", schema = "structyourlife")
 public class Order {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "orderid")
     private Integer orderId;
     @Column(name = "userid")

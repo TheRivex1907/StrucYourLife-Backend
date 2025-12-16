@@ -1,6 +1,7 @@
 package com.therivex1907.StructYourLife.services;
 
 import com.therivex1907.StructYourLife.models.OrderItem;
+import com.therivex1907.StructYourLife.requests.OrderItemRequest;
 import com.therivex1907.StructYourLife.responses.BaseResponse;
 import com.therivex1907.StructYourLife.responses.OrderItemResponse;
 import com.therivex1907.StructYourLife.repositories.OrderItemRepository;
@@ -32,11 +33,22 @@ public class OrdenItemService {
         for (OrderItem obj: data) {
             OrderItemResponse transformed = new OrderItemResponse();
             transformed.setOrderItemId(obj.getOrderItemId());
-            transformed.setOrderId(obj.getOrder().getOrderId());
+            transformed.setOrderId(obj.getOrderId());
             transformed.setProductId(obj.getProductId());
             transformed.setQuantity(obj.getQuantity());
             transformed.setPrice(obj.getPrice());
+            orderItems.add(transformed);
         }
-        return new  BaseResponse<>(200, "Ok", data);
+        return new  BaseResponse<>(200, "Ok", orderItems);
+    }
+
+    public BaseResponse<?> createOrderItem(OrderItemRequest orderItemRequest) {
+        OrderItem newOrderItem = new OrderItem();
+        newOrderItem.setOrderId(orderItemRequest.getOrderId());
+        newOrderItem.setProductId(orderItemRequest.getProductId());
+        newOrderItem.setQuantity(orderItemRequest.getQuantity());
+        newOrderItem.setPrice(orderItemRequest.getPrice());
+
+        return new BaseResponse<>(200, "OK", newOrderItem);
     }
 }
